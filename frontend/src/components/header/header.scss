@@ -1,0 +1,148 @@
+@import '../../styles/colors.scss';
+
+.appBar {
+    width: 100%;
+    padding-top: 5px;
+    height: 100px;
+    background-color: transparent;
+    font-family: $body;
+    overflow-x: hidden;
+    position: absolute;
+}
+
+.nav_Container {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+// web view
+
+
+.logo_img {
+    width: 43px;
+    height: 43px;
+    object-fit: cover;
+    cursor: pointer;
+
+}
+
+.logo-text {
+    color: $text;
+
+}
+
+.left_nav {
+    width: 15%;
+   
+
+    .logo_Link {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-left: 15%;
+        
+    }
+}
+
+
+
+.midd_nav {
+    width: 60%;
+
+    .menu_container {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+
+        .nav_menu:first-child {
+            width: 6rem;
+        }
+
+        .nav_menu:nth-last-child(2) {
+            width: 5rem;
+        }
+
+        .nav_menu:nth-last-child(3) {
+
+            width: 7.5rem;
+        }
+
+        .nav_menu:nth-last-child(4) {
+            width: 7rem;
+        }
+
+        .nav_menu {
+            color: $text;
+            width: 100px;
+            letter-spacing: 0.05rem;
+            animation: ease-in-out 0.5s;
+            cursor: pointer;
+        }
+    }
+}
+
+
+
+.right_nav {
+
+    position: relative;
+    // width: 20%;
+    justify-content: flex-end;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+
+
+    .right_menuContainer {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        gap: 10%;
+        align-items: center;
+        position: relative;
+
+       
+    }
+
+
+}
+
+.profile_Menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+@media screen and (max-width:800px) {
+
+    .logo_img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .logo-text {
+        font-size: 1.2rem;
+    }
+
+    .nav_menu {
+        font-size: 0.7rem;
+    }
+
+    .navSearch_container{
+        width: 20px;
+        height: 30px;
+    }
+   .nav_search_input{
+    padding: 0;
+   }
+  
+
+}
